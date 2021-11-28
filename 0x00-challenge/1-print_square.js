@@ -11,13 +11,13 @@ if (process.argv.length != 3) {
     process.stderr.write("Missing argument\n");
     process.stderr.write("Usage: ./1-print_square.js <size>\n");
     process.stderr.write("Example: ./1-print_square.js 8\n");
-    process.exit(1)
+    process.exit(1);
 }
 
 let size = parseInt(process.argv[2], 10);
 
-for (let i = 0 ; i < size && size > 0; i ++) {
-    for (let j = 0 ; j < size; j ++) {
+for (let i = 0; i < size && size > 0; i++) {
+    for (let j = 0; j < size; j++) {
         process.stdout.write("#");
     }
     process.stdout.write("\n");
